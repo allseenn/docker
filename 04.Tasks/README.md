@@ -50,7 +50,7 @@ curl http://localhost:8081
 В папке проекта *maria* для веб-сервера создадим конфиг, включающий работу через *php-fpm*
 
 ```
-vim nginx
+vim nginx.conf
 ```
 
 <img src=pics/20.png>
