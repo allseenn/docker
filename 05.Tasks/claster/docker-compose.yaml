@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  nginx-master:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  nginx-slave:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    deploy:
+      placement:
+        constraints: [node.role == worker]
+
