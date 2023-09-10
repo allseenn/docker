@@ -10,7 +10,6 @@ services:
       - ADMINER_DEFAULT_SERVER=mariadb
       - ADMINER_DEFAULT_USERNAME=root
       - ADMINER_DEFAULT_PASSWORD=test123
-      # Добавьте другие переменные среды по необходимости
     networks:
       - mynetwork
     deploy:
